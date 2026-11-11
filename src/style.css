@@ -1,0 +1,48 @@
+/* Full theme (設計書 3.6) is added in M3. */
+:root {
+  --bg: #f6f8f8;
+  --text: #1f2a29;
+  --muted: #5b6b69;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1514;
+    --text: #e6eeed;
+    --muted: #9aaeab;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.site-version {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
