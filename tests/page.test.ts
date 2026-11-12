@@ -148,7 +148,7 @@ describe('T-05 optional parts', () => {
 
   it('uses a CSS placeholder when there is no image, and <img> when there is', () => {
     const d = data();
-    expect(renderCard(find(d, 'nagatacho-politics'), ctx(d))).toContain('class="card-image placeholder"');
+    expect(renderCard(find(d, 'life-wealth'), ctx(d))).toContain('class="card-image placeholder"');
     const html = renderCard(find(d, 'city-chase'), ctx(d));
     expect(html).toContain('<img class="card-image" src="/images/city-chase.webp" width="800" height="420"');
     expect(html).toContain('loading="lazy"');

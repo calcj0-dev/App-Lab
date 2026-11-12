@@ -135,7 +135,7 @@
       "status": "public",
       "order": 4,
       "url": "https://nagatacho-politics.vercel.app",
-      "image": null,
+      "image": "images/nagatacho-politics.webp",
       "name": {
         "ja": "永田町ポリティクス"
       },
@@ -157,7 +157,7 @@
       },
       "notes": [],
       "imageAlt": {
-        "ja": "永田町ポリティクスのゲーム画面"
+        "ja": "永田町ポリティクスのカードの裏面"
       }
     },
     {

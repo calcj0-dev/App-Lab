@@ -21,6 +21,14 @@ const POSITION = {
   // 'example-app': 'top',
 };
 
+/**
+ * 元の画像の一部だけを使う画像（左上からの位置と大きさ、px）。縮小・切り抜きの前に切り出す。
+ * 永田町ポリティクス：ゲーム画面の右側（ロゴ入りのカードの裏面）だけ。政党名と人物を入れないため（要件定義書 U18）。
+ */
+const EXTRACT = {
+  'nagatacho-politics': { left: 400, top: 150, width: 464, height: 244 },
+};
+
 async function convert(file) {
   const id = basename(file, extname(file));
   const size = id === 'avatar' ? AVATAR : CARD;
@@ -28,7 +36,9 @@ async function convert(file) {
 
   // Lower the quality step by step until the file fits the size limit.
   for (let quality = 82; quality >= 40; quality -= 6) {
-    const info = await sharp(join(srcDir, file))
+    let image = sharp(join(srcDir, file));
+    if (EXTRACT[id]) image = image.extract(EXTRACT[id]);
+    const info = await image
       .resize({ ...size, fit: 'cover', position: POSITION[id] ?? 'centre' })
       .webp({ quality, effort: 6 })
       .toFile(out);
