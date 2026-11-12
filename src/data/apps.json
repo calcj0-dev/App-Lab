@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "apps": [
+    {
+      "id": "tameru",
+      "category": "tool",
+      "featured": true,
+      "status": "public",
+      "order": 1,
+      "url": "https://tameru-lovat.vercel.app",
+      "image": null,
+      "name": {
+        "ja": "TAMERU（タメル）"
+      },
+      "shortName": {
+        "ja": "TAMERU"
+      },
+      "tagline": {
+        "ja": "貯めて、眺めて、続けられる資産管理"
+      },
+      "description": {
+        "ja": "毎月の資産を、スプレッドシートの感覚で記録できる Web アプリ。証券口座や銀行口座とつながずに使えます。資産の推移や構成比はグラフで見られます。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "口座連携なし",
+          "PC・スマホ"
+        ]
+      },
+      "notice": null,
+      "notes": [],
+      "imageAlt": {
+        "ja": "TAMERU の画面"
+      }
+    },
+    {
+      "id": "trader-vs-autopilot",
+      "category": "game",
+      "featured": false,
+      "status": "public",
+      "order": 1,
+      "url": "https://trader-vs-autopilot.vercel.app/",
+      "image": null,
+      "name": {
+        "ja": "積立投資を超えろ！"
+      },
+      "tagline": {
+        "ja": "毎月10万円・20年の売買で、積立に勝てる？"
+      },
+      "description": {
+        "ja": "架空の相場を「買」「売」の2ボタンで売買して、積立投資と勝負するブラウザゲーム。結果は称号つきで X にシェアできます。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": {
+        "ja": "ゲームであり、投資助言ではありません。相場は架空です。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "積立投資を超えろ！の共有画像"
+      }
+    },
+    {
+      "id": "takarakuji-gacha",
+      "category": "game",
+      "featured": false,
+      "status": "coming",
+      "order": 2,
+      "url": null,
+      "image": null,
+      "name": {
+        "ja": "宝くじ100連ガチャ"
+      },
+      "tagline": {
+        "ja": "1枚300円の宝くじを、100回引いてみる。"
+      },
+      "description": {
+        "ja": "架空の宝くじを「買う」ボタンで100回引いて、いくら返ってくるかを試すブラウザゲーム。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": {
+        "ja": "ジョークのゲームです。宝くじの購入をすすめるものでも、否定するものでもありません。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "宝くじ100連ガチャ（準備中）"
+      }
+    },
+    {
+      "id": "city-chase",
+      "category": "game",
+      "featured": false,
+      "status": "public",
+      "order": 3,
+      "url": "https://building-chase.vercel.app",
+      "image": null,
+      "name": {
+        "ja": "シティチェイス（City Chase）"
+      },
+      "tagline": {
+        "ja": "ビル街の推理鬼ごっこ"
+      },
+      "description": {
+        "ja": "逃げる人はビルからビルへ、警察はヘリコプター3機で捜索。足跡から居場所を推理するゲームです。CPU と1人で、または1台の端末を2人で交代して遊べます。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "2人で遊べる",
+          "日本語・英語"
+        ]
+      },
+      "notice": null,
+      "notes": [],
+      "imageAlt": {
+        "ja": "シティチェイスの共有画像"
+      }
+    },
+    {
+      "id": "nagatacho-politics",
+      "category": "game",
+      "featured": false,
+      "status": "public",
+      "order": 4,
+      "url": "https://nagatacho-politics.vercel.app",
+      "image": null,
+      "name": {
+        "ja": "永田町ポリティクス"
+      },
+      "tagline": {
+        "ja": "風刺・パロディの政治家カードゲーム"
+      },
+      "description": {
+        "ja": "6つの政党から1つを選び、CPU と対戦するカードゲーム。支持率100%を目指します。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "CPU 対戦",
+          "インストール不要"
+        ]
+      },
+      "notice": {
+        "ja": "風刺・パロディの創作です。実在の人物・政党とは関係ありません。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "永田町ポリティクスのゲーム画面"
+      }
+    },
+    {
+      "id": "life-wealth",
+      "category": "game",
+      "featured": false,
+      "status": "coming",
+      "order": 5,
+      "url": null,
+      "image": null,
+      "name": {
+        "ja": "LIFE & WEALTH"
+      },
+      "tagline": {
+        "ja": "投資とライフイベントを体験する人生ゲーム"
+      },
+      "description": {
+        "ja": "株や投資信託、住宅の購入、教育費などを体験しながら、資産形成を学べる Web のボードゲーム。"
+      },
+      "tags": {
+        "ja": [
+          "開発中"
+        ]
+      },
+      "notice": {
+        "ja": "学び・体験のゲームです。特定の金融商品をすすめるものではありません。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "LIFE & WEALTH（準備中）"
+      }
+    },
+    {
+      "id": "portfolio-pals",
+      "category": "game",
+      "featured": false,
+      "status": "coming",
+      "order": 6,
+      "url": null,
+      "image": null,
+      "name": {
+        "ja": "投資キャラ診断"
+      },
+      "tagline": {
+        "ja": "資産構成を入れるだけ。質問ゼロ。"
+      },
+      "description": {
+        "ja": "資産の配分を入れると、あなたの投資キャラが出るジョークの診断。"
+      },
+      "tags": {
+        "ja": [
+          "開発中"
+        ]
+      },
+      "notice": {
+        "ja": "ジョークの診断であり、投資助言ではありません。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "投資キャラ診断（準備中）"
+      }
+    }
+  ]
+}

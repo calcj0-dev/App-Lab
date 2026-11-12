@@ -1,0 +1,35 @@
+{
+  "site": {
+    "name": "Ted App Lab",
+    "title": "Ted App Lab｜資産管理ツールと無料ブラウザゲーム",
+    "description": "FIREを目指す会社員 Ted が作った、口座連携なしの資産管理ツール「TAMERU」と、お金・推理・政治風刺の無料ブラウザゲームをまとめています。",
+    "ogTitle": "Ted App Lab",
+    "ogDescription": "FIREを目指す会社員 Ted が作った資産管理ツールと、無料のブラウザゲームのまとめ",
+    "version": "v{version}"
+  },
+  "profile": {
+    "intro": "FIREを目指す会社員 Ted が、自分で使う資産管理ツールと、ちょっと笑えるブラウザゲームを作っています。",
+    "follow": "X をフォロー",
+    "note": "note を読む"
+  },
+  "categories": {
+    "tool": "資産形成のツール",
+    "game": "ゲーム"
+  },
+  "card": {
+    "public": "公開中",
+    "coming": "準備中",
+    "open": "開く",
+    "openFeatured": "{name} を使ってみる",
+    "noteLink": "作った話（note）",
+    "comingAction": "公開したら X でお知らせします"
+  },
+  "news": {
+    "heading": "お知らせ",
+    "date": "{y}/{m}/{d}"
+  },
+  "footer": {
+    "disclaimer": "このサイトで紹介しているツール・ゲームは、投資助言ではありません。",
+    "copyright": "© {year} Ted（{xHandle}）"
+  }
+}

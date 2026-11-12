@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": {
+    "displayName": "Ted@目指せFIRE🔥",
+    "xHandle": "@shooojp19",
+    "xUrl": "https://x.com/shooojp19",
+    "noteUrl": "https://note.com/teddd19",
+    "avatar": null
+  },
+  "categories": [
+    { "id": "tool", "order": 1 },
+    { "id": "game", "order": 2 }
+  ],
+  "utm": {
+    "source": "portal",
+    "medium": "referral",
+    "campaign": "ted_app_lab"
+  },
+  "ogImage": "og.png",
+  "themeColor": "#0d9488"
+}
