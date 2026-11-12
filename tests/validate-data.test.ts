@@ -50,7 +50,7 @@ describe('validateData', () => {
     ['duplicate order in category', (d) => (app(d, 'city-chase').order = 1), 'city-chase の order'],
     ['missing image file', (d) => (app(d, 'tameru').image = 'images/missing.webp'), 'public/images/missing.webp がありません'],
     ['image too large', (d) => (app(d, 'tameru').image = 'images/big.webp'), '画像が大きすぎます'],
-    ['missing avatar file', (d) => (d.site.author.avatar = 'images/avatar.webp'), 'author.avatar'],
+    ['missing avatar file', (d) => (d.site.author.avatar = 'images/no-avatar.webp'), 'author.avatar'],
     ['tagline too long', (d) => (app(d, 'tameru').tagline.ja = 'あ'.repeat(31)), '30字以内'],
     ['description too long', (d) => (app(d, 'tameru').description.ja = 'あ'.repeat(91)), '90字以内'],
     ['shortName too long', (d) => (app(d, 'tameru').shortName.ja = 'あ'.repeat(13)), '12字以内'],

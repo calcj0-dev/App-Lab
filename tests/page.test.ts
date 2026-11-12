@@ -7,6 +7,7 @@ import { escapeHtml } from '../src/render/html.ts';
 import { t } from '../src/render/i18n.ts';
 import { groupApps, latestNews } from '../src/render/order.ts';
 import { renderPage } from '../src/render/page.ts';
+import { renderProfile } from '../src/render/profile.ts';
 import { withUtm } from '../src/render/utm.ts';
 
 const build = { version: '0.3.0', year: 2026, siteUrl: 'https://app-lab-rust.vercel.app/' };
@@ -213,5 +214,19 @@ describe('escaping and placeholders', () => {
 
   it('t() leaves unknown placeholders', () => {
     expect(t('{a}-{b}', { a: 1 })).toBe('1-{b}');
+  });
+});
+
+describe('profile avatar', () => {
+  it('shows the X icon when site.json has one', () => {
+    const d = data();
+    d.site.author.avatar = 'images/avatar.webp';
+    expect(renderProfile(ctx(d))).toContain('<img class="avatar" src="/images/avatar.webp" width="56" height="56" alt="">');
+  });
+
+  it('falls back to the first letter of the display name', () => {
+    const d = data();
+    d.site.author.avatar = null;
+    expect(renderProfile(ctx(d))).toContain('<span class="avatar avatar--fallback" aria-hidden="true">T</span>');
   });
 });
