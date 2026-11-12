@@ -27,6 +27,8 @@ const POSITION = {
  */
 const EXTRACT = {
   'nagatacho-politics': { left: 400, top: 150, width: 464, height: 244 },
+  // LIFE & WEALTH：タイトル画面（1200×630 で撮影）の、絵とタイトルの部分だけ。
+  'life-wealth': { left: 200, top: 70, width: 800, height: 420 },
 };
 
 async function convert(file) {

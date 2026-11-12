@@ -106,6 +106,14 @@ describe('T-04 coming cards', () => {
     expect(html).toContain(`<a class="btn btn--coming" href="https://x.com/shooojp19">公開したら X でお知らせします</a>`);
   });
 
+  it('a coming card with an image shows it without a link, with the 準備中 badge', () => {
+    const d = data();
+    const html = renderCard(find(d, 'life-wealth'), ctx(d));
+    expect(html).toContain('<div class="card-media"><img class="card-image" src="/images/life-wealth.webp"');
+    expect(html).not.toContain('<a class="card-media"');
+    expect(html).toContain('badge--coming');
+  });
+
   it('public cards have the open button', () => {
     const d = data();
     const html = renderCard(find(d, 'city-chase'), ctx(d));
@@ -149,7 +157,9 @@ describe('T-05 optional parts', () => {
 
   it('uses a CSS placeholder when there is no image, and <img> when there is', () => {
     const d = data();
-    expect(renderCard(find(d, 'life-wealth'), ctx(d))).toContain('class="card-image placeholder"');
+    const coming = find(d, 'life-wealth');
+    coming.image = null;
+    expect(renderCard(coming, ctx(d))).toContain('class="card-image placeholder"');
     const html = renderCard(find(d, 'city-chase'), ctx(d));
     expect(html).toContain('<img class="card-image" src="/images/city-chase.webp" width="800" height="420"');
     expect(html).toContain('loading="lazy"');

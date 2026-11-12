@@ -73,7 +73,7 @@
       "status": "coming",
       "order": 2,
       "url": null,
-      "image": null,
+      "image": "images/takarakuji-gacha.webp",
       "name": {
         "ja": "宝くじ100連ガチャ"
       },
@@ -95,7 +95,7 @@
       },
       "notes": [],
       "imageAlt": {
-        "ja": "宝くじ100連ガチャ（準備中）"
+        "ja": "宝くじ100連ガチャの共有画像"
       }
     },
     {
@@ -167,7 +167,7 @@
       "status": "coming",
       "order": 5,
       "url": null,
-      "image": null,
+      "image": "images/life-wealth.webp",
       "name": {
         "ja": "LIFE & WEALTH"
       },
@@ -187,7 +187,7 @@
       },
       "notes": [],
       "imageAlt": {
-        "ja": "LIFE & WEALTH（準備中）"
+        "ja": "LIFE & WEALTH のタイトル画面"
       }
     },
     {
@@ -197,7 +197,7 @@
       "status": "coming",
       "order": 6,
       "url": null,
-      "image": null,
+      "image": "images/portfolio-pals.webp",
       "name": {
         "ja": "投資キャラ診断"
       },
@@ -217,7 +217,7 @@
       },
       "notes": [],
       "imageAlt": {
-        "ja": "投資キャラ診断（準備中）"
+        "ja": "投資キャラ診断の共有画像"
       }
     }
   ]

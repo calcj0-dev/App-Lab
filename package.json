@@ -1,7 +1,7 @@
 {
   "name": "ted-app-lab",
   "private": true,
-  "version": "0.5.2",
+  "version": "0.5.3",
   "type": "module",
   "engines": {
     "node": "24.x"
