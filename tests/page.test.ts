@@ -9,7 +9,7 @@ import { groupApps, latestNews } from '../src/render/order.ts';
 import { renderPage } from '../src/render/page.ts';
 import { withUtm } from '../src/render/utm.ts';
 
-const build = { version: '0.3.0', year: 2026 };
+const build = { version: '0.3.0', year: 2026, siteUrl: 'https://app-lab-rust.vercel.app/' };
 
 function data(): PortalData {
   return structuredClone(loadData());

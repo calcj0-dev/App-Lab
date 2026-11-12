@@ -1,20 +1,22 @@
 // Data -> HTML strings for the whole page. Runs only at build time (called from the Vite plugin).
-// Full OGP / canonical / JSON-LD head tags are added in M5 (設計書 6.1・8章).
 import { DEFAULT_LANG, type PortalData } from '../data.ts';
 import { renderCard } from './card.ts';
 import type { RenderContext } from './context.ts';
 import { renderFooter } from './footer.ts';
+import { renderHead } from './head.ts';
 import { escapeHtml } from './html.ts';
 import { t } from './i18n.ts';
 import { renderNews } from './news.ts';
 import { groupApps } from './order.ts';
 import { renderProfile } from './profile.ts';
 
-export { escapeHtml } from './html.ts';
-
 export interface BuildInfo {
   version: string;
   year: number;
+  /** Absolute site URL ending with "/" (VITE_SITE_URL). */
+  siteUrl: string;
+  /** Google Search Console HTML-tag value; omitted when empty. */
+  gscVerification?: string;
 }
 
 export interface RenderedPage {
@@ -47,14 +49,6 @@ export function renderPage(data: PortalData, build: BuildInfo): RenderedPage {
     )
     .join('');
 
-  const head = [
-    `<title>${escapeHtml(data.messages.site.title)}</title>`,
-    `<meta name="description" content="${escapeHtml(data.messages.site.description)}">`,
-    `<meta name="theme-color" content="${escapeHtml(data.site.themeColor)}">`,
-    '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
-    '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
-  ].join('\n    ');
-
   const body = [
     renderHeader(ctx, build.version),
     '<main class="page">',
@@ -65,5 +59,8 @@ export function renderPage(data: PortalData, build: BuildInfo): RenderedPage {
     renderFooter(ctx, build.year),
   ].join('');
 
-  return { head, body };
+  return {
+    head: renderHead(data, { siteUrl: build.siteUrl, gscVerification: build.gscVerification }),
+    body,
+  };
 }

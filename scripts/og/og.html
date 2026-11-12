@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- サイトの OGP 画像の元（設計書 6.1）。npm run og で 1200×630 の public/og.png にする -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1200px;
+    height: 630px;
+    box-sizing: border-box;
+    padding: 96px 96px 72px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+    color: #ffffff;
+    font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif;
+  }
+  .brand { display: flex; align-items: center; gap: 36px; }
+  .logo {
+    width: 128px; height: 128px; border-radius: 28px; background: #ffffff;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo svg { width: 76px; height: 76px; }
+  h1 { margin: 0; font-size: 104px; font-weight: 800; letter-spacing: 0.01em; line-height: 1; }
+  .sub { margin-top: 56px; font-size: 50px; font-weight: 700; line-height: 1.45; }
+  .handle { margin-top: auto; align-self: flex-end; font-size: 36px; font-weight: 600; opacity: 0.92; }
+</style>
+</head>
+<body>
+  <div class="brand">
+    <div class="logo"><svg viewBox="16 17 32 32"><path d="M16 17h32v8H36v24h-8V25H16z" fill="#0f766e"/></svg></div>
+    <h1>Ted App Lab</h1>
+  </div>
+  <p class="sub">資産管理ツールと、<br>ちょっと笑えるブラウザゲーム</p>
+  <p class="handle">@shooojp19</p>
+</body>
+</html>
