@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import type { Plugin } from 'vite';
 import { defineConfig } from 'vitest/config';
+import { loadData } from './src/data.ts';
 import { renderPage } from './src/render/page.ts';
 
 const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as {
@@ -12,8 +13,7 @@ function portalHtml(): Plugin {
   return {
     name: 'portal-html',
     transformIndexHtml(html) {
-      // Site name moves to src/data/i18n/ja.json in M2.
-      const page = renderPage({ siteName: 'Ted App Lab', version: pkg.version });
+      const page = renderPage(loadData(), { version: pkg.version, year: new Date().getFullYear() });
       return html.replace('<!--app-head-->', page.head).replace('<!--app-body-->', page.body);
     },
   };
