@@ -1,4 +1,6 @@
 // T-01: the data check passes on the real data and stops on broken data (設計書 9.2).
+import { existsSync, statSync } from 'node:fs';
+import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import appsJson from '../src/data/apps.json' with { type: 'json' };
 import newsJson from '../src/data/news.json' with { type: 'json' };
@@ -12,11 +14,15 @@ function fresh(): { apps: AnyObj; news: AnyObj; site: AnyObj; messages: AnyObj }
   return structuredClone({ apps: appsJson, news: newsJson, site: siteJson, messages: jaJson }) as any;
 }
 
+// Fake files for the test cases; anything else is looked up in the real public/.
 const files: Record<string, number> = {
   'images/ok.webp': 10_000,
   'images/big.webp': MAX_IMAGE_BYTES + 1,
 };
-const options = { fileSize: (p: string) => files[p] ?? null };
+const PUBLIC = join(__dirname, '..', 'public');
+const options = {
+  fileSize: (p: string) => files[p] ?? (existsSync(join(PUBLIC, p)) ? statSync(join(PUBLIC, p)).size : null),
+};
 
 function run(mutate: (d: ReturnType<typeof fresh>) => void): string[] {
   const d = fresh();
@@ -42,7 +48,7 @@ describe('validateData', () => {
     ['unknown status', (d) => (app(d, 'city-chase').status = 'beta'), 'city-chase の status'],
     ['unknown category', (d) => (app(d, 'city-chase').category = 'tools'), 'city-chase の category'],
     ['duplicate order in category', (d) => (app(d, 'city-chase').order = 1), 'city-chase の order'],
-    ['missing image file', (d) => (app(d, 'tameru').image = 'images/tameru.webp'), 'public/images/tameru.webp がありません'],
+    ['missing image file', (d) => (app(d, 'tameru').image = 'images/missing.webp'), 'public/images/missing.webp がありません'],
     ['image too large', (d) => (app(d, 'tameru').image = 'images/big.webp'), '画像が大きすぎます'],
     ['missing avatar file', (d) => (d.site.author.avatar = 'images/avatar.webp'), 'author.avatar'],
     ['tagline too long', (d) => (app(d, 'tameru').tagline.ja = 'あ'.repeat(31)), '30字以内'],

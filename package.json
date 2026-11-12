@@ -1,7 +1,7 @@
 {
   "name": "ted-app-lab",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "engines": {
     "node": "24.x"
@@ -12,10 +12,12 @@
     "build": "npm run validate && tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "check": "npm run validate && tsc --noEmit && vitest run"
+    "check": "npm run validate && tsc --noEmit && vitest run",
+    "images": "node scripts/images.mjs"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "sharp": "^0.35.5",
     "typescript": "^7.0.2",
     "vite": "^8.3.8",
     "vitest": "^5.1.0"

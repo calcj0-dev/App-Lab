@@ -8,7 +8,7 @@
       "status": "public",
       "order": 1,
       "url": "https://tameru-lovat.vercel.app",
-      "image": null,
+      "image": "images/tameru.webp",
       "name": {
         "ja": "TAMERU（タメル）"
       },
@@ -41,7 +41,7 @@
       "status": "public",
       "order": 1,
       "url": "https://trader-vs-autopilot.vercel.app/",
-      "image": null,
+      "image": "images/trader-vs-autopilot.webp",
       "name": {
         "ja": "積立投資を超えろ！"
       },
@@ -105,7 +105,7 @@
       "status": "public",
       "order": 3,
       "url": "https://building-chase.vercel.app",
-      "image": null,
+      "image": "images/city-chase.webp",
       "name": {
         "ja": "シティチェイス（City Chase）"
       },

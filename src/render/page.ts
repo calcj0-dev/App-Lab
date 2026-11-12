@@ -51,6 +51,8 @@ export function renderPage(data: PortalData, build: BuildInfo): RenderedPage {
     `<title>${escapeHtml(data.messages.site.title)}</title>`,
     `<meta name="description" content="${escapeHtml(data.messages.site.description)}">`,
     `<meta name="theme-color" content="${escapeHtml(data.site.themeColor)}">`,
+    '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
   ].join('\n    ');
 
   const body = [
