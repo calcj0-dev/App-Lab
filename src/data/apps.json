@@ -164,9 +164,9 @@
       "id": "tiny-gold-bar",
       "category": "game",
       "featured": false,
-      "status": "public",
+      "status": "coming",
       "order": 7,
-      "url": "https://tiny-gold-bar.vercel.app",
+      "url": null,
       "image": "images/tiny-gold-bar.webp",
       "name": {
         "ja": "金塊、ちっさ！"

@@ -2,7 +2,6 @@
   "version": 1,
   "show": 3,
   "items": [
-    { "date": "2026-11-13", "appId": "tiny-gold-bar",       "text": { "ja": "「金塊、ちっさ！」を公開しました" } },
     { "date": "2026-10-26", "appId": "trader-vs-autopilot", "text": { "ja": "「積立投資を超えろ！」を公開しました" } },
     { "date": "2026-10-18", "appId": "city-chase",          "text": { "ja": "「シティチェイス」を公開しました" } },
     { "date": "2026-10-08", "appId": "tameru",              "text": { "ja": "「TAMERU」を公開しました" } }
