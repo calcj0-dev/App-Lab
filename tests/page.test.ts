@@ -76,6 +76,7 @@ describe('T-03 ordering', () => {
       'trader-vs-autopilot',
       'city-chase',
       'nagatacho-politics',
+      'tiny-gold-bar',
       'takarakuji-gacha',
       'life-wealth',
       'portfolio-pals',

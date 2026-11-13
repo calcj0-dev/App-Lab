@@ -161,6 +161,38 @@
       }
     },
     {
+      "id": "tiny-gold-bar",
+      "category": "game",
+      "featured": false,
+      "status": "public",
+      "order": 7,
+      "url": "https://tiny-gold-bar.vercel.app",
+      "image": "images/tiny-gold-bar.webp",
+      "name": {
+        "ja": "金塊、ちっさ！"
+      },
+      "tagline": {
+        "ja": "1億円の金塊は、どのくらいの大きさ？"
+      },
+      "description": {
+        "ja": "金額を選んでタップするたびに金を買い、金塊の大きさをゴマや牛乳パックと比べるゲーム。1億円でも手のひらサイズです。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": {
+        "ja": "ジョークのゲームであり、投資・税務の助言ではありません。金の値段は架空です。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "金塊、ちっさ！の共有画像"
+      }
+    },
+    {
       "id": "life-wealth",
       "category": "game",
       "featured": false,
