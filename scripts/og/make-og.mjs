@@ -12,6 +12,7 @@ try {
   const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
   await page.goto(pathToFileURL(join(here, 'og.html')).href);
   await page.evaluate(() => document.fonts.ready);
+  await page.waitForLoadState('networkidle');
   await page.screenshot({ path: out, type: 'png' });
   console.log(`public/og.png を作りました（1200×630）`);
 } finally {

@@ -1,5 +1,6 @@
 <!doctype html>
 <!-- サイトの OGP 画像の元（設計書 6.1）。npm run og で 1200×630 の public/og.png にする -->
+<!-- 背景に並べるアプリ（オーナーが決定、2026-11-13）：TAMERU・積立投資を超えろ！・宝くじ100連ガチャ・LIFE & WEALTH・投資キャラ診断・シティチェイス -->
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -8,31 +9,81 @@
   body {
     width: 1200px;
     height: 630px;
-    box-sizing: border-box;
-    padding: 96px 96px 72px;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+    overflow: hidden;
+    position: relative;
+    background: #0f1514;
     color: #ffffff;
     font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif;
   }
-  .brand { display: flex; align-items: center; gap: 36px; }
+  /* アプリの画像を傾けて敷き詰め、暗くする */
+  .wall {
+    position: absolute;
+    inset: -60px -80px;
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    gap: 18px;
+    transform: rotate(-8deg);
+    opacity: 0.55;
+  }
+  .wall img { width: 330px; height: 173px; border-radius: 12px; object-fit: cover; }
+  .panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    box-sizing: border-box;
+    padding: 46px 56px;
+    border-radius: 32px;
+    background: rgba(15, 118, 110, 0.94);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  .brand { display: flex; align-items: center; justify-content: center; gap: 22px; }
   .logo {
-    width: 128px; height: 128px; border-radius: 28px; background: #ffffff;
+    width: 86px; height: 86px; border-radius: 20px; background: #ffffff;
     display: flex; align-items: center; justify-content: center;
   }
-  .logo svg { width: 76px; height: 76px; }
-  h1 { margin: 0; font-size: 104px; font-weight: 800; letter-spacing: 0.01em; line-height: 1; }
-  .sub { margin-top: 56px; font-size: 50px; font-weight: 700; line-height: 1.45; }
-  .handle { margin-top: auto; align-self: flex-end; font-size: 36px; font-weight: 600; opacity: 0.92; }
+  .logo svg { width: 52px; height: 52px; }
+  h1 { margin: 0; font-size: 84px; font-weight: 800; line-height: 1; }
+  .sub { margin: 26px 0 0; font-size: 40px; font-weight: 800; line-height: 1.4; }
+  .note { margin: 18px 0 0; font-size: 28px; font-weight: 700; opacity: 0.9; }
 </style>
 </head>
 <body>
-  <div class="brand">
-    <div class="logo"><svg viewBox="16 17 32 32"><path d="M16 17h32v8H36v24h-8V25H16z" fill="#0f766e"/></svg></div>
-    <h1>Ted App Lab</h1>
+  <div class="wall">
+    <img src="../../public/images/tameru.webp" alt="">
+    <img src="../../public/images/takarakuji-gacha.webp" alt="">
+    <img src="../../public/images/city-chase.webp" alt="">
+    <img src="../../public/images/life-wealth.webp" alt="">
+    <img src="../../public/images/trader-vs-autopilot.webp" alt="">
+    <img src="../../public/images/portfolio-pals.webp" alt="">
+    <img src="../../public/images/tameru.webp" alt="">
+    <img src="../../public/images/takarakuji-gacha.webp" alt="">
+    <img src="../../public/images/city-chase.webp" alt="">
+    <img src="../../public/images/life-wealth.webp" alt="">
+    <img src="../../public/images/trader-vs-autopilot.webp" alt="">
+    <img src="../../public/images/portfolio-pals.webp" alt="">
+    <img src="../../public/images/tameru.webp" alt="">
+    <img src="../../public/images/takarakuji-gacha.webp" alt="">
+    <img src="../../public/images/city-chase.webp" alt="">
+    <img src="../../public/images/life-wealth.webp" alt="">
+    <img src="../../public/images/trader-vs-autopilot.webp" alt="">
+    <img src="../../public/images/portfolio-pals.webp" alt="">
+    <img src="../../public/images/tameru.webp" alt="">
+    <img src="../../public/images/takarakuji-gacha.webp" alt="">
+    <img src="../../public/images/city-chase.webp" alt="">
+    <img src="../../public/images/life-wealth.webp" alt="">
+    <img src="../../public/images/trader-vs-autopilot.webp" alt="">
+    <img src="../../public/images/portfolio-pals.webp" alt="">
   </div>
-  <p class="sub">資産管理ツールと、<br>ちょっと笑えるブラウザゲーム</p>
-  <p class="handle">@shooojp19</p>
+  <div class="panel">
+    <div class="brand">
+      <div class="logo"><svg viewBox="16 17 32 32"><path d="M16 17h32v8H36v24h-8V25H16z" fill="#0f766e"/></svg></div>
+      <h1>Ted App Lab</h1>
+    </div>
+    <p class="sub">資産管理ツールと<br>ちょっと笑えるブラウザゲーム</p>
+    <p class="note">全部無料・インストール不要 ／ @shooojp19</p>
+  </div>
 </body>
 </html>
