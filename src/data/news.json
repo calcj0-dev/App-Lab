@@ -2,6 +2,7 @@
   "version": 1,
   "show": 3,
   "items": [
+    { "date": "2026-11-14", "appId": "portfolio-pals",      "text": { "ja": "「投資キャラ診断」を公開しました" } },
     { "date": "2026-11-13", "appId": null,                  "text": { "ja": "Ted App Lab を公開しました" } },
     { "date": "2026-10-26", "appId": "trader-vs-autopilot", "text": { "ja": "「積立投資を超えろ！」を公開しました" } },
     { "date": "2026-10-18", "appId": "city-chase",          "text": { "ja": "「シティチェイス」を公開しました" } },

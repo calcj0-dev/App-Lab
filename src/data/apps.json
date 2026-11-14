@@ -226,9 +226,9 @@
       "id": "portfolio-pals",
       "category": "game",
       "featured": false,
-      "status": "coming",
+      "status": "public",
       "order": 6,
-      "url": null,
+      "url": "https://portfolio-pals.vercel.app",
       "image": "images/portfolio-pals.webp",
       "name": {
         "ja": "投資キャラ診断"
@@ -237,11 +237,13 @@
         "ja": "資産構成を入れるだけ。質問ゼロ。"
       },
       "description": {
-        "ja": "資産の配分を入れると、あなたの投資キャラが出るジョークの診断。"
+        "ja": "資産構成の割合を入れるだけで、あなたの投資キャラが分かるジョークの診断。30秒で終わり、金額は聞きません。"
       },
       "tags": {
         "ja": [
-          "開発中"
+          "無料",
+          "30秒で診断",
+          "インストール不要"
         ]
       },
       "notice": {

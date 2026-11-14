@@ -45,6 +45,7 @@ describe('T-07 head', () => {
       '積立投資を超えろ！',
       'シティチェイス（City Chase）',
       '永田町ポリティクス',
+      '投資キャラ診断',
     ]);
     expect(items[0].applicationCategory).toBe('FinanceApplication');
     expect(items[1].applicationCategory).toBe('GameApplication');
