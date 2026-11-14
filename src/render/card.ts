@@ -1,7 +1,7 @@
 // App cards: featured (large), normal, and coming soon (設計書 3.3).
 import type { App } from '../data.ts';
 import type { RenderContext } from './context.ts';
-import { escapeHtml, publicPath } from './html.ts';
+import { escapeHtml, NEW_TAB, publicPath } from './html.ts';
 import { loc, t } from './i18n.ts';
 import { withUtm } from './utm.ts';
 
@@ -28,7 +28,7 @@ function renderMedia(app: App, ctx: RenderContext, href: string | null): string 
   // The image links to the same place as the main button; keep it out of the tab order
   // and the accessibility tree so the app is announced once.
   return href
-    ? `<a class="card-media" href="${escapeHtml(href)}" tabindex="-1" aria-hidden="true">${media}</a>`
+    ? `<a class="card-media" href="${escapeHtml(href)}"${NEW_TAB} tabindex="-1" aria-hidden="true">${media}</a>`
     : `<div class="card-media">${media}</div>`;
 }
 
@@ -59,14 +59,14 @@ export function renderCard(app: App, ctx: RenderContext): string {
       ? t(messages.card.openFeatured, { name: loc(app.shortName ?? app.name, lang) })
       : messages.card.open;
     const variant = app.featured ? 'btn--featured' : 'btn--primary';
-    action = `<a class="btn ${variant}" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`;
+    action = `<a class="btn ${variant}" href="${escapeHtml(href)}"${NEW_TAB}>${escapeHtml(label)}</a>`;
   } else {
-    action = `<a class="btn btn--coming" href="${escapeHtml(site.author.xUrl)}">${escapeHtml(messages.card.comingAction)}</a>`;
+    action = `<a class="btn btn--coming" href="${escapeHtml(site.author.xUrl)}"${NEW_TAB}>${escapeHtml(messages.card.comingAction)}</a>`;
   }
 
   const note = app.notes[0];
   const noteLink = note
-    ? `<a class="card-note" href="${escapeHtml(note.url)}" title="${escapeHtml(loc(note.title, lang))}">${escapeHtml(messages.card.noteLink)}</a>`
+    ? `<a class="card-note" href="${escapeHtml(note.url)}"${NEW_TAB} title="${escapeHtml(loc(note.title, lang))}">${escapeHtml(messages.card.noteLink)}</a>`
     : '';
 
   return [

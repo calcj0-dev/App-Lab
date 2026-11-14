@@ -1,13 +1,13 @@
 // Self-introduction (設計書 3.2) and the X / note links shared with the footer.
 import type { RenderContext } from './context.ts';
-import { escapeHtml, publicPath } from './html.ts';
+import { escapeHtml, NEW_TAB, publicPath } from './html.ts';
 
 /** "Follow on X" / "Read note". No UTM: these are not our sites (設計書 3.2). */
 export function renderSocialLinks({ site, messages }: RenderContext): string {
   return [
     '<div class="social">',
-    `<a class="btn btn--sub" href="${escapeHtml(site.author.xUrl)}">${escapeHtml(messages.profile.follow)}</a>`,
-    `<a class="btn btn--sub" href="${escapeHtml(site.author.noteUrl)}">${escapeHtml(messages.profile.note)}</a>`,
+    `<a class="btn btn--sub" href="${escapeHtml(site.author.xUrl)}"${NEW_TAB}>${escapeHtml(messages.profile.follow)}</a>`,
+    `<a class="btn btn--sub" href="${escapeHtml(site.author.noteUrl)}"${NEW_TAB}>${escapeHtml(messages.profile.note)}</a>`,
     '</div>',
   ].join('');
 }

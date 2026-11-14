@@ -104,7 +104,7 @@ describe('T-04 coming cards', () => {
     const html = renderCard(find(d, 'life-wealth'), ctx(d));
     expect(html).not.toContain(d.messages.card.open + '<');
     expect(html).toContain('準備中');
-    expect(html).toContain(`<a class="btn btn--coming" href="https://x.com/shooojp19">公開したら X でお知らせします</a>`);
+    expect(html).toContain(`<a class="btn btn--coming" href="https://x.com/shooojp19" target="_blank" rel="noopener">公開したら X でお知らせします</a>`);
   });
 
   it('a coming card with an image shows it without a link, with the 準備中 badge', () => {
@@ -204,11 +204,17 @@ describe('footer', () => {
 });
 
 describe('T-09 referrer', () => {
-  it('no link drops the referrer or opens a new tab', () => {
+  it('no link drops the referrer', () => {
     const { head, body } = renderPage(data(), build);
     expect(head + body).not.toContain('noreferrer');
     expect(head + body).not.toContain('no-referrer');
-    expect(body).not.toContain('target=');
+  });
+
+  it('every link opens in a new tab with rel="noopener" only', () => {
+    const { body } = renderPage(data(), build);
+    const links = body.match(/<a [^>]*>/g) ?? [];
+    expect(links.length).toBeGreaterThan(0);
+    for (const link of links) expect(link).toContain(' target="_blank" rel="noopener"');
   });
 });
 

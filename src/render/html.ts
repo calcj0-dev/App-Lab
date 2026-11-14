@@ -14,3 +14,9 @@ export function escapeHtml(value: string): string {
 export function publicPath(path: string): string {
   return `/${path}`;
 }
+
+/**
+ * Every link opens in a new tab (owner, 2026-11-14). Only `noopener`, never `noreferrer`:
+ * the apps count visits from this site by the referrer (設計書 7.2, T-09).
+ */
+export const NEW_TAB = ' target="_blank" rel="noopener"';
