@@ -74,10 +74,10 @@ describe('T-03 ordering', () => {
     expect(groups.map((g) => g.category.id)).toEqual(['tool', 'game']);
     expect(groups[1].apps.map((a) => a.id)).toEqual([
       'trader-vs-autopilot',
+      'takarakuji-gacha',
       'city-chase',
       'nagatacho-politics',
       'portfolio-pals',
-      'takarakuji-gacha',
       'life-wealth',
       'tiny-gold-bar',
     ]);
@@ -186,8 +186,9 @@ describe('T-06 news', () => {
   });
 
   it('formats the date', () => {
-    const { body } = renderPage(data(), build);
-    expect(body).toContain('<time datetime="2026-10-26">2026/10/26</time>');
+    const d = data();
+    d.news.items.unshift({ date: '2099-01-05', appId: null, text: { ja: 'x' } });
+    expect(renderPage(d, build).body).toContain('<time datetime="2099-01-05">2099/01/05</time>');
   });
 });
 

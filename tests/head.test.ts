@@ -43,6 +43,7 @@ describe('T-07 head', () => {
     expect(items.map((i: any) => i.name)).toEqual([
       'TAMERU（タメル）',
       '積立投資を超えろ！',
+      '宝くじ100連ガチャ',
       'シティチェイス（City Chase）',
       '永田町ポリティクス',
       '投資キャラ診断',

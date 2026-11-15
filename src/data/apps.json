@@ -70,9 +70,9 @@
       "id": "takarakuji-gacha",
       "category": "game",
       "featured": false,
-      "status": "coming",
+      "status": "public",
       "order": 2,
-      "url": null,
+      "url": "https://100-pull-lottery.vercel.app",
       "image": "images/takarakuji-gacha.webp",
       "name": {
         "ja": "宝くじ100連ガチャ"
@@ -81,7 +81,7 @@
         "ja": "1枚300円の宝くじを、100回引いてみる。"
       },
       "description": {
-        "ja": "架空の宝くじを「買う」ボタンで100回引いて、いくら返ってくるかを試すブラウザゲーム。"
+        "ja": "架空の宝くじを「買う」ボタンで100回引いて、いくら返ってくるかを試すブラウザゲーム。当たりの比率は年末ジャンボと同じです。"
       },
       "tags": {
         "ja": [
