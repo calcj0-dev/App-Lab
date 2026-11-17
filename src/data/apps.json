@@ -211,7 +211,7 @@
       },
       "tags": {
         "ja": [
-          "開発中"
+          "準備中"
         ]
       },
       "notice": {
@@ -252,6 +252,36 @@
       "notes": [],
       "imageAlt": {
         "ja": "投資キャラ診断の共有画像"
+      }
+    },
+    {
+      "id": "sketch-japan-47",
+      "category": "game",
+      "featured": false,
+      "status": "coming",
+      "order": 8,
+      "url": null,
+      "image": "images/sketch-japan-47.webp",
+      "name": {
+        "ja": "都道府県お絵かき採点"
+      },
+      "tagline": {
+        "ja": "県名だけを見て、形を描こう。"
+      },
+      "description": {
+        "ja": "県名だけを見て都道府県の形を30秒で描くと、本物と重ねて100点満点で採点するゲーム。47都道府県チャレンジもあります。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": null,
+      "notes": [],
+      "imageAlt": {
+        "ja": "都道府県お絵かき採点の共有画像"
       }
     }
   ]

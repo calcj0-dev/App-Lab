@@ -80,6 +80,7 @@ describe('T-03 ordering', () => {
       'portfolio-pals',
       'life-wealth',
       'tiny-gold-bar',
+      'sketch-japan-47',
     ]);
   });
 
