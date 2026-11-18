@@ -36,7 +36,7 @@
     },
     {
       "id": "trader-vs-autopilot",
-      "category": "game",
+      "category": "money-game",
       "featured": false,
       "status": "public",
       "order": 1,
@@ -68,7 +68,7 @@
     },
     {
       "id": "takarakuji-gacha",
-      "category": "game",
+      "category": "money-game",
       "featured": false,
       "status": "public",
       "order": 2,
@@ -103,7 +103,7 @@
       "category": "game",
       "featured": false,
       "status": "public",
-      "order": 3,
+      "order": 1,
       "url": "https://building-chase.vercel.app",
       "image": "images/city-chase.webp",
       "name": {
@@ -133,7 +133,7 @@
       "category": "game",
       "featured": false,
       "status": "public",
-      "order": 4,
+      "order": 2,
       "url": "https://nagatacho-politics.vercel.app",
       "image": "images/nagatacho-politics.webp",
       "name": {
@@ -162,10 +162,10 @@
     },
     {
       "id": "tiny-gold-bar",
-      "category": "game",
+      "category": "money-game",
       "featured": false,
       "status": "coming",
-      "order": 7,
+      "order": 5,
       "url": null,
       "image": "images/tiny-gold-bar.webp",
       "name": {
@@ -194,10 +194,10 @@
     },
     {
       "id": "life-wealth",
-      "category": "game",
+      "category": "money-game",
       "featured": false,
       "status": "coming",
-      "order": 5,
+      "order": 4,
       "url": null,
       "image": "images/life-wealth.webp",
       "name": {
@@ -226,10 +226,10 @@
     },
     {
       "id": "portfolio-pals",
-      "category": "game",
+      "category": "money-game",
       "featured": false,
       "status": "public",
-      "order": 6,
+      "order": 3,
       "url": "https://portfolio-pals.vercel.app",
       "image": "images/portfolio-pals.webp",
       "name": {
@@ -261,7 +261,7 @@
       "category": "game",
       "featured": false,
       "status": "coming",
-      "order": 8,
+      "order": 3,
       "url": null,
       "image": "images/sketch-japan-47.webp",
       "name": {

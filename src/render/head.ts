@@ -13,6 +13,7 @@ export interface HeadOptions {
 /** schema.org applicationCategory per site category. */
 const SCHEMA_CATEGORY: Record<string, string> = {
   tool: 'FinanceApplication',
+  'money-game': 'GameApplication',
   game: 'GameApplication',
 };
 

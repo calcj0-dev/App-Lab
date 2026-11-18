@@ -71,29 +71,27 @@ describe('T-03 ordering', () => {
   it('groups by category, then public before coming, then by order', () => {
     const d = data();
     const groups = groupApps(d.apps, d.site.categories);
-    expect(groups.map((g) => g.category.id)).toEqual(['tool', 'game']);
+    expect(groups.map((g) => g.category.id)).toEqual(['tool', 'money-game', 'game']);
     expect(groups[1].apps.map((a) => a.id)).toEqual([
       'trader-vs-autopilot',
       'takarakuji-gacha',
-      'city-chase',
-      'nagatacho-politics',
       'portfolio-pals',
       'life-wealth',
       'tiny-gold-bar',
-      'sketch-japan-47',
     ]);
+    expect(groups[2].apps.map((a) => a.id)).toEqual(['city-chase', 'nagatacho-politics', 'sketch-japan-47']);
   });
 
   it('moves a coming app up when it becomes public', () => {
     const d = data();
-    Object.assign(find(d, 'takarakuji-gacha'), { status: 'public', url: 'https://example.com' });
-    const games = groupApps(d.apps, d.site.categories)[1].apps.map((a) => a.id);
-    expect(games.slice(0, 2)).toEqual(['trader-vs-autopilot', 'takarakuji-gacha']);
+    Object.assign(find(d, 'tiny-gold-bar'), { status: 'public', url: 'https://example.com' });
+    const money = groupApps(d.apps, d.site.categories)[1].apps.map((a) => a.id);
+    expect(money.slice(3)).toEqual(['tiny-gold-bar', 'life-wealth']);
   });
 
   it('renders sections in that order', () => {
     const { body } = renderPage(data(), build);
-    const positions = ['id="category-tool"', 'id="category-game"', 'id="news-heading"'].map((s) => body.indexOf(s));
+    const positions = ['id="category-tool"', 'id="category-money-game"', 'id="category-game"', 'id="news-heading"'].map((s) => body.indexOf(s));
     expect(positions.every((p) => p >= 0)).toBe(true);
     expect([...positions].sort((a, b) => a - b)).toEqual(positions);
   });

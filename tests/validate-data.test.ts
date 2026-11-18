@@ -47,7 +47,7 @@ describe('validateData', () => {
     ['coming with url', (d) => (app(d, 'life-wealth').url = 'https://example.com'), 'life-wealth の url'],
     ['unknown status', (d) => (app(d, 'city-chase').status = 'beta'), 'city-chase の status'],
     ['unknown category', (d) => (app(d, 'city-chase').category = 'tools'), 'city-chase の category'],
-    ['duplicate order in category', (d) => (app(d, 'city-chase').order = 1), 'city-chase の order'],
+    ['duplicate order in category', (d) => (app(d, 'sketch-japan-47').order = 1), 'sketch-japan-47 の order'],
     ['missing image file', (d) => (app(d, 'tameru').image = 'images/missing.webp'), 'public/images/missing.webp がありません'],
     ['image too large', (d) => (app(d, 'tameru').image = 'images/big.webp'), '画像が大きすぎます'],
     ['missing avatar file', (d) => (d.site.author.avatar = 'images/no-avatar.webp'), 'author.avatar'],

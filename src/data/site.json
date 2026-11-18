@@ -9,7 +9,8 @@
   },
   "categories": [
     { "id": "tool", "order": 1 },
-    { "id": "game", "order": 2 }
+    { "id": "money-game", "order": 2 },
+    { "id": "game", "order": 3 }
   ],
   "utm": {
     "source": "portal",
