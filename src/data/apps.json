@@ -285,6 +285,70 @@
       "imageAlt": {
         "ja": "都道府県お絵かき採点の共有画像"
       }
+    },
+    {
+      "id": "dont-switch",
+      "category": "money-game",
+      "featured": false,
+      "status": "coming",
+      "order": 6,
+      "url": null,
+      "image": "images/dont-switch.webp",
+      "name": {
+        "ja": "乗り換えたら負け"
+      },
+      "tagline": {
+        "ja": "1億円か、1円を毎日2倍・30日か。"
+      },
+      "description": {
+        "ja": "今すぐもらえる1億円か、毎日2倍になる1円か。1日ずつ進むなかで、乗り換えずに我慢できるかのゲーム。複利のすごさが分かります。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": {
+        "ja": "ジョークのゲームであり、投資助言ではありません。人物・銀行は架空です。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "乗り換えたら負けの共有画像"
+      }
+    },
+    {
+      "id": "stock-price-maker",
+      "category": "money-game",
+      "featured": false,
+      "status": "coming",
+      "order": 7,
+      "url": null,
+      "image": "images/stock-price-maker.webp",
+      "name": {
+        "ja": "株価を決めるのは誰？"
+      },
+      "tagline": {
+        "ja": "株の値付け師になって、値段を決めよう。"
+      },
+      "description": {
+        "ja": "買いたい人と売りたい人が一番たくさん取引できる値段を、5日間決めるゲーム。ニュースで株価が動く仕組みが分かります。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": {
+        "ja": "ゲームであり、投資助言ではありません。会社・ニュースは架空です。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "株価を決めるのは誰？の共有画像"
+      }
     }
   ]
 }
