@@ -2,6 +2,7 @@
   "version": 1,
   "show": 3,
   "items": [
+    { "date": "2026-11-22", "appId": "sketch-japan-47",     "text": { "ja": "「都道府県お絵かき採点」を公開しました" } },
     { "date": "2026-11-15", "appId": "takarakuji-gacha",    "text": { "ja": "「宝くじ100連ガチャ」を公開しました" } },
     { "date": "2026-11-14", "appId": "portfolio-pals",      "text": { "ja": "「投資キャラ診断」を公開しました" } },
     { "date": "2026-11-13", "appId": null,                  "text": { "ja": "Ted App Lab を公開しました" } },

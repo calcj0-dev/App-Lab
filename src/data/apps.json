@@ -260,9 +260,9 @@
       "id": "sketch-japan-47",
       "category": "game",
       "featured": false,
-      "status": "coming",
+      "status": "public",
       "order": 3,
-      "url": null,
+      "url": "https://sketch-japan-47.vercel.app",
       "image": "images/sketch-japan-47.webp",
       "name": {
         "ja": "都道府県お絵かき採点"
