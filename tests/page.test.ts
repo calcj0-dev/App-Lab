@@ -80,6 +80,8 @@ describe('T-03 ordering', () => {
       'dont-switch',
       'life-wealth',
       'stock-price-maker',
+      'clink-to-rich',
+      'pension-office',
     ]);
     expect(groups[2].apps.map((a) => a.id)).toEqual(['city-chase', 'nagatacho-politics', 'sketch-japan-47']);
   });

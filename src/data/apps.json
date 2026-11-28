@@ -349,6 +349,70 @@
       "imageAlt": {
         "ja": "株価を決めるのは誰？の共有画像"
       }
+    },
+    {
+      "id": "clink-to-rich",
+      "category": "money-game",
+      "featured": false,
+      "status": "coming",
+      "order": 8,
+      "url": null,
+      "image": "images/clink-to-rich.webp",
+      "name": {
+        "ja": "億までチャリン"
+      },
+      "tagline": {
+        "ja": "同じお金がくっつくと、1つ上のお金に。"
+      },
+      "description": {
+        "ja": "同じお金どうしがくっつくと1つ上のお金になる、合体落ち物ゲーム。1円玉から1億円を目指します。現金を株に替えると増えていきます。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": {
+        "ja": "ジョークのゲームであり、投資助言ではありません。株・会社は架空です。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "億までチャリンの共有画像"
+      }
+    },
+    {
+      "id": "pension-office",
+      "category": "money-game",
+      "featured": false,
+      "status": "coming",
+      "order": 9,
+      "url": null,
+      "image": "images/pension-office.webp",
+      "name": {
+        "ja": "年金運用課へようこそ"
+      },
+      "tagline": {
+        "ja": "20人の職員で、国の年金を20年運用せよ。"
+      },
+      "description": {
+        "ja": "株・債券・現金を職員に見立てて、架空の国の年金を20年運用する経営シミュレーション。分散や、慌てて動かさない大切さが分かります。"
+      },
+      "tags": {
+        "ja": [
+          "無料",
+          "インストール不要",
+          "スマホ向け"
+        ]
+      },
+      "notice": {
+        "ja": "ジョークのゲームであり、投資助言ではありません。国・ニュース・値動きは架空です。"
+      },
+      "notes": [],
+      "imageAlt": {
+        "ja": "年金運用課へようこその共有画像"
+      }
     }
   ]
 }
