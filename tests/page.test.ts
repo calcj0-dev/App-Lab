@@ -76,9 +76,9 @@ describe('T-03 ordering', () => {
       'trader-vs-autopilot',
       'takarakuji-gacha',
       'portfolio-pals',
-      'life-wealth',
       'tiny-gold-bar',
       'dont-switch',
+      'life-wealth',
       'stock-price-maker',
     ]);
     expect(groups[2].apps.map((a) => a.id)).toEqual(['city-chase', 'nagatacho-politics', 'sketch-japan-47']);
@@ -86,9 +86,9 @@ describe('T-03 ordering', () => {
 
   it('moves a coming app up when it becomes public', () => {
     const d = data();
-    Object.assign(find(d, 'tiny-gold-bar'), { status: 'public', url: 'https://example.com' });
+    Object.assign(find(d, 'stock-price-maker'), { status: 'public', url: 'https://example.com' });
     const money = groupApps(d.apps, d.site.categories)[1].apps.map((a) => a.id);
-    expect(money.slice(3, 5)).toEqual(['tiny-gold-bar', 'life-wealth']);
+    expect(money.slice(5, 7)).toEqual(['stock-price-maker', 'life-wealth']);
   });
 
   it('renders sections in that order', () => {

@@ -164,9 +164,9 @@
       "id": "tiny-gold-bar",
       "category": "money-game",
       "featured": false,
-      "status": "coming",
+      "status": "public",
       "order": 5,
-      "url": null,
+      "url": "https://tiny-gold-bar.vercel.app",
       "image": "images/tiny-gold-bar.webp",
       "name": {
         "ja": "金塊、ちっさ！"
@@ -290,9 +290,9 @@
       "id": "dont-switch",
       "category": "money-game",
       "featured": false,
-      "status": "coming",
+      "status": "public",
       "order": 6,
-      "url": null,
+      "url": "https://don-t-switch.vercel.app",
       "image": "images/dont-switch.webp",
       "name": {
         "ja": "乗り換えたら負け"
